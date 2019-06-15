@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtSongName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Song Name Display Here"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Artist Name:"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:padding="5dp"/>
+                <TextView
+                    android:id="@+id/txtArtistName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.55"
+                    android:text="Artist Name Display Here"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp"
+                    android:padding="5dp"/>
+                <TextView
+                    android:id="@+id/txtSongDuration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.20"
+                    android:text="0:0:0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/audioPlayImage"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
